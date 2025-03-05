@@ -1,3 +1,11 @@
+# project name: Password Strength Generator Sir zia khan project 3
+# developer: Anum Rajput
+# date: 05-03-2025
+# version: 1.0.0
+
+
+
+
 import re
 import streamlit as st
 
