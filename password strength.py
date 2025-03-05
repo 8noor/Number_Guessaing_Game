@@ -47,12 +47,13 @@ def check_password_strength(password):
         feedback.append("❌ Include ** at least one special character(!@#$%^&*)**.")
 
         #display password strength result
-        if score == 0:
+        if score == 4:
+             st.success("✅ **Strong Password** - Your password is strong and secure.")
+
+        elif score == 3:
+            st.info("⚠️ **Moderate password** - Consider improving  security by adding more features"   )
+        else:
             st.error("❌ **Weak Password** - Please make it stronger.")
-        elif score == 1:
-            st.warning("⚠️ **Moderate password** - Consider improving  security by adding more features"   )
-        elif score == 2:
-            st.success("✅ **Strong Password** - Your password is strong and secure.")
 
         #display feedback
         if feedback:
